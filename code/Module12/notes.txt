@@ -1,0 +1,48 @@
+https://addons.mozilla.org/en-US/firefox/addon/firebug/
+
+
+Xpath 
+
+Complete OR absolute xpath
+html/body/div/div[2]/div[1]/h1
+html/body/div[1]/div[2]/div[1]/h1
+html/body/...div[1]...../div[2]/div[2]/form/input[16]
+
+
+Partial Xpath
+//tagname[@attribute='Value']
+//*[@id='Email']
+//input[@id='Email']
+//*
+//*[@id='next']
+
+
+Custom partial xpaths
+//*[@id='Email']
+//*[@name='Email']
+//*[@placeholder='Enter your email']
+//*[@id='Email' and @name='Email' and @placeholder='Enter your email']
+//div[@class='Banner']/h1
+//div[@class='main content clearfix']/div[1]/h1
+//div[@class='main content clearfix']/div[@class='Banner']/h1
+//h1
+
+.........................CSS Selectors.............................
+
+*[name='Email]
+input[name='Email']
+input[id='Email']
+input[@placeholder='Enter your email']
+input[name='Email'][id='Email'][@placeholder='Enter your email']
+div[class='Banner'] h1
+#Email
+// ^ $ *
+// ^ - starts with
+// $ - ends with
+// * - contains
+
+
+http://automationtricks.blogspot.com/2010/09/how-to-use-functions-in-xpath-in.html
+
+//*[@id='page']/section[3]/div/div/div[1]/section[1]/div/ul/li[3]/div/div[2]/h3/a
+#page > section.module.module--compound.module--news-sport > div > div > div.news-sport > section.module.module--news.module--collapse-images > div > ul > li.media-list__item.media-list__item--3 > div > div.media__content > h3 > a

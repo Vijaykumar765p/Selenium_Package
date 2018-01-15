@@ -1,0 +1,36 @@
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class DropDown {
+
+	public static void main(String[] args) {
+		// select ,  count , print , find the selected
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("http://qtpselenium.com/home/contact_trainer");
+		
+		
+		WebElement dropList=driver.findElement(By.name("country_id"));
+		dropList.sendKeys("Egypt");
+		
+		List<WebElement> options = dropList.findElements(By.tagName("option"));
+		System.out.println("Total options -> "+ options.size());
+		
+		for(int i=0;i<options.size();i++){
+			System.out.println(options.get(i).getText()+" -- "+options.get(i).getAttribute("selected"));
+		}
+		
+		/*************/
+		Select s=  new Select(dropList);
+		// You
+	}
+
+}

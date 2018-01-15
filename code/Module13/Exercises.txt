@@ -1,0 +1,32 @@
+1) Go to SalesForce.com
+2) Register as a trial/free user
+3) Write a script which logs in
+4) Then Script should create a new Lead
+5) Verify the new lead
+
+
+Please watch String handling part in video 7
+"Go to:
+http://www.americangolf.co.uk/golf-clubs/fairway-woods"
+Print every link under brand
+Every link will have a number in front of it
+Find sum of all numbers
+Total number of products found is written on the page-"74 Products found"
+Verify sum s equal to number of products mentioned
+
+
+Go to http://www.espncricinfo.com/england-v-new-zealand-2015/engine/match/743953.html
+Add up runs scored by each player
+Check whther its equal to total runs
+
+Go to jobserve.com
+Click on industry droplist
+Uncheck all by clicking on- "Select All Industries"
+"Write a code which will click on checkboxes in front of:
+Engineering
+Manufacturing"
+"Code should be dynamic enough. If we want to click on different
+selection tomorrow, we should be able to do it without changing code. We should just need to supply the text against which we want to select "
+
+String company="Manufacturing"
+
